@@ -21,6 +21,7 @@ public class Filme implements Serializable {
 	private String diretor;
 
 	public Filme() {
+
 	}
 
 	public long getId() {

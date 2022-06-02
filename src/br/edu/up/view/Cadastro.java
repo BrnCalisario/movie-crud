@@ -11,6 +11,7 @@ public class Cadastro extends Tela {
 	static Scanner scan = new Scanner(System.in);
 
 	static final String SUCCESS_MESSAGE = "\nFilme Cadastrado com Sucesso!!" + Fmt.pularLinhas(2);
+	static final String CANCEL_MESSAGE = "\nCadastro Cancelado - Voltando para o Menu Principal\n";
 
 	public Cadastro() {
 		super();
@@ -20,12 +21,12 @@ public class Cadastro extends Tela {
 	@Override
 	public void displayScreen() {
 
-		System.out.println(Fmt.pularLinhas(2) + Fmt.emCouch("Tela de Cadastro"));
+		System.out.println(Fmt.pularLinhas(2) + "[ Tela de Cadastro ]");
 		displayMovieInputs();
 
 	}
 
-	public void displayMovieInputs() {
+	private void displayMovieInputs() {
 		Filme filme = new Filme();
 
 		System.out.print("Digite o nome do filme: ");
@@ -37,8 +38,25 @@ public class Cadastro extends Tela {
 		System.out.print("Digite o nome do diretor: ");
 		filme.setDiretor(scan.nextLine());
 
+		String movieFormat =
+				"\nDados Informados:"
+				+"\nNome: " + Fmt.emCouch(filme.getNome())
+				+"\nAno: " + Fmt.emCouch(filme.getAno())
+				+"\nDiretor " + Fmt.emCouch(filme.getDiretor())
+				+"\nPressione qualquer tecla para confirmar ou 0 para cancelar";
+
+		System.out.println(movieFormat);
+		if (scan.nextLine().equals("0")){
+			displayCancelMessage();
+			return;
+		}
+
 		MovieStorage.insertMovie(filme);
 		System.out.println(SUCCESS_MESSAGE);
+	}
+
+	private void displayCancelMessage(){
+		System.out.println(CANCEL_MESSAGE);
 	}
 
 }

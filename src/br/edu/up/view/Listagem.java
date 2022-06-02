@@ -13,12 +13,11 @@ public class Listagem extends Tela {
 	static Scanner scan = new Scanner(System.in);
 	static String opcao = "";
 
-	static List<Filme> filmes;
+	static List<Filme> filmes  = MovieStorage.listMovies();
 
 	public Listagem() {
 		super();
 		displayOption = "Listar Filmes";
-		loadMovies();
 	}
 
 	@Override
@@ -47,11 +46,7 @@ public class Listagem extends Tela {
 		}
 	}
 
-	public void loadMovies() {
-		filmes = MovieStorage.listMovies();
-	}
-
-	public void displayMovies() {
+	private void displayMovies() {
 		System.out.println("\nLista de Filmes\n[ID] - Nome do Filme");
 		for (Filme filme : filmes) {
 			String idFormatado = (String) Fmt.emCouch(filme.getId());
@@ -59,7 +54,8 @@ public class Listagem extends Tela {
 
 		}
 	}
-	public static Filme selectByID() {
+
+	private static Filme selectByID() {
 		while(true) {
 			System.out.println("Digite o ID do filme desejado (digite 0 para voltar): ");
 			try {
@@ -78,7 +74,7 @@ public class Listagem extends Tela {
 		}
 	}
 
-	public static Filme localizeByID(int id) throws Exception {
+	private static Filme localizeByID(int id) throws Exception {
 		for(Filme filme : filmes){
 			if(filme.getId() == id){
 				return filme;
