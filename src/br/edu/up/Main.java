@@ -35,7 +35,7 @@ public class Main {
 				System.out.println(FINAL_MESSAGE);
 				break;
 			} else {
-				System.out.println("Opção Inválida" + Fmt.pularLinhas(2));
+				invalidOptionMessage();
 			}
 
 		}
@@ -69,4 +69,9 @@ public class Main {
 		listaTelas.add(cad);
 		listaTelas.add(list);
 	}
+
+	public static void invalidOptionMessage(){
+		System.out.println("Opção Inválida\n");
+	}
+
 }

@@ -23,13 +23,6 @@ public class Filme implements Serializable {
 	public Filme() {
 	}
 
-//	public Filme(String nome, String ano, String diretor) {
-//		super();
-//		this.nome = nome;
-//		this.ano = ano;
-//		this.diretor = diretor;
-//	}
-
 	public long getId() {
 		return id;
 	}

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="start" />
+    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="start">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-crud.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prj-jpa-sqlite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-crud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +39,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
     "last_opened_file_path": "C:/Users/bruno/eclipse-workspace/prj-jpa-sqlite",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -40,7 +52,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "proofread"
+    "settings.editor.selected.configurable": "preferences.toDoOptions"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -51,7 +63,20 @@
   <component name="RunManager">
     <configuration name="Principal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="br.edu.up.Main" />
-      <module name="prj-jpa-sqlite" />
+      <module name="movie-crud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="movie-crud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="movie-crud" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,8 +93,16 @@
       <workItem from="1654122478504" duration="1038000" />
       <workItem from="1654125551914" duration="497000" />
       <workItem from="1654129762877" duration="117000" />
-      <workItem from="1654133784778" duration="1032000" />
+      <workItem from="1654133784778" duration="4821000" />
     </task>
+    <task id="LOCAL-00001" summary="start">
+      <created>1654134857650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654134857650</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +122,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <option name="LAST_COMMIT_MESSAGE" value="start" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/edu/up/model/Filme.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/prj-jpa-sqlite.iml" filepath="$PROJECT_DIR$/prj-jpa-sqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-crud.iml" filepath="$PROJECT_DIR$/movie-crud.iml" />
     </modules>
   </component>
 </project>
