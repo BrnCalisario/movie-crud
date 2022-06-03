@@ -13,7 +13,7 @@ public class Main {
 	static String opcao;
 	static Scanner scan = new Scanner(System.in);
 
-	static final String FINAL_MESSAGE = Fmt.pularLinhas(2) + "Obrigado por utilizar o Letterboxd(Java Edition).";
+	static final String FINAL_MESSAGE = "\n\nObrigado por utilizar o Letterboxd(Java Edition).";
 	static ArrayList<Tela> listaTelas = new ArrayList<>();
 
 	public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class Main {
 				telaAtual.displayScreen();
 
 			} else if (opcao.equals("0")) {
-				System.out.println(FINAL_MESSAGE);
+				Fmt.println(FINAL_MESSAGE);
 				break;
 			} else {
 				invalidOptionMessage();
@@ -45,7 +45,7 @@ public class Main {
 	}
 
 	public static String menuDisplay() {
-		System.out.println("[ Menu Principal ]");
+		Fmt.println("[ Menu Principal ]");
 		for (Tela tela : listaTelas) {
 
 			int indexDisplay = listaTelas.indexOf(tela) + 1;
@@ -53,12 +53,12 @@ public class Main {
 			tela.setIndex(indexDisplay);
 
 			String display = Fmt.emCouch(indexDisplay) + " " + tela.getDisplayOption();
-			System.out.println(display);
+			Fmt.println(display);
 		}
-		System.out.println("[0] Sair");
+		Fmt.println("[0] Sair");
 
-		
-		System.out.print("Escolha: ");
+
+		Fmt.print("Escolha: ");
 		return scan.next();
 	}
 
@@ -70,8 +70,7 @@ public class Main {
 		listaTelas.add(list);
 	}
 
-	public static void invalidOptionMessage(){
-		System.out.println("Opção Inválida\n");
-	}
+	public static void invalidOptionMessage() { Fmt.println("Opção Inválida\n"); }
+
 
 }

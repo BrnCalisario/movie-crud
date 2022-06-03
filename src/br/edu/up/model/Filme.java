@@ -33,6 +33,11 @@ public class Filme implements Serializable {
 	}
 
 	public String getNome() {
+
+		if(nome.isEmpty()){
+			return "Não Informado";
+		}
+
 		return nome;
 	}
 
@@ -58,7 +63,7 @@ public class Filme implements Serializable {
 
 	@Override
 	public String toString() {
-		return nome + " (" + ano + ") " + "Directed by " + diretor + "\n";
+		return nome + " (" + ano + ") " + "Dirigido por " + diretor + "\n";
 	}
 
 }

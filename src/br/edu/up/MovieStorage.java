@@ -29,4 +29,11 @@ public class MovieStorage {
 		return em.createQuery("from Filme", Filme.class).getResultList();
 	}
 
+	public static void removeMovie(Filme filme){
+		em.getTransaction().begin();
+		em.remove(filme);
+		em.getTransaction().commit();
+	}
+
+
 }

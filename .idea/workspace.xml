@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="Implemented movie selection by ID">
+    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="Cancel option for Register Screen">
+      <change afterPath="$PROJECT_DIR$/src/br/edu/up/view/Editor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco-sqlite.db" beforeDir="false" afterPath="$PROJECT_DIR$/banco-sqlite.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/MovieStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/MovieStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/util/Fmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/util/Fmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Cadastro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" afterDir="false" />
     </list>
@@ -15,9 +20,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,7 +88,9 @@
       <workItem from="1654125551914" duration="497000" />
       <workItem from="1654129762877" duration="117000" />
       <workItem from="1654133784778" duration="4821000" />
-      <workItem from="1654176010105" duration="2186000" />
+      <workItem from="1654176010105" duration="7097000" />
+      <workItem from="1654189643705" duration="351000" />
+      <workItem from="1654277470954" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1654134857650</created>
@@ -86,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654134857650</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cancel option for Register Screen">
+      <created>1654178658036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654178658036</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="Cancel option for Register Screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cancel option for Register Screen" />
   </component>
 </project>

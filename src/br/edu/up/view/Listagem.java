@@ -11,9 +11,9 @@ import br.edu.up.util.Fmt;
 public class Listagem extends Tela {
 
 	static Scanner scan = new Scanner(System.in);
-	static String opcao = "";
+	private static String opcao = "";
 
-	static List<Filme> filmes  = MovieStorage.listMovies();
+	private static List<Filme> filmes;
 
 	public Listagem() {
 		super();
@@ -24,19 +24,21 @@ public class Listagem extends Tela {
 	public void displayScreen() {
 
 		while(true){
+			filmes = MovieStorage.listMovies();
 			displayMovies();
-			System.out.println("\n" + Fmt.emCouch("1") + "Selecionar filme por ID | "
-					+ Fmt.emCouch("0") + " Sair");
-			System.out.print("Escolha: ");
+
+			Fmt.println("\n" + Fmt.emCouch("1") + "Selecionar filme por ID | [0] Sair");
+			Fmt.print("Escolha: ");
 			opcao = scan.next();
 
-			//TODO  Tela de informações detalhadas sobre o filme e opções de Edição e Exclusão
 			if(Fmt.isValid(opcao, 1)){
 
+				Editor editor = new Editor(selectByID());
+				editor.displayScreen();
 
-				Filme selecionado = selectByID();
+
 			} else if (opcao.equals("0")){
-				System.out.println("\n");
+				Fmt.println("\n");
 				break;
 			} else {
 				Main.invalidOptionMessage();
@@ -47,29 +49,26 @@ public class Listagem extends Tela {
 	}
 
 	private void displayMovies() {
-		System.out.println("\nLista de Filmes\n[ID] - Nome do Filme");
+		Fmt.println("\nLista de Filmes\n[ID] - Nome do Filme");
 		for (Filme filme : filmes) {
 			String idFormatado = (String) Fmt.emCouch(filme.getId());
-			System.out.println(idFormatado + " - " + filme.getNome());
+			Fmt.println(idFormatado + " - " + filme.getNome());
 
 		}
 	}
 
 	private static Filme selectByID() {
 		while(true) {
-			System.out.println("Digite o ID do filme desejado (digite 0 para voltar): ");
+			Fmt.println("Digite o ID do filme desejado (digite 0 para voltar): ");
 			try {
+
 				int id = scan.nextInt();
+				if (id == 0) return null;
 
-				if (id == 0) {
-					return null;
-				}
+				return localizeByID(id);
 
-				Filme filmeSelecionado = localizeByID(id);
-				System.out.println("Filme selecionado: " + filmeSelecionado.getNome());
-				return filmeSelecionado;
 			} catch (Exception e) {
-				System.out.println(e.getMessage());
+				Fmt.println(e.getMessage());
 			}
 		}
 	}

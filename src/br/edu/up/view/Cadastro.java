@@ -21,7 +21,7 @@ public class Cadastro extends Tela {
 	@Override
 	public void displayScreen() {
 
-		System.out.println(Fmt.pularLinhas(2) + "[ Tela de Cadastro ]");
+		Fmt.println(Fmt.pularLinhas(2) + "[ Tela de Cadastro ]");
 		displayMovieInputs();
 
 	}
@@ -29,34 +29,34 @@ public class Cadastro extends Tela {
 	private void displayMovieInputs() {
 		Filme filme = new Filme();
 
-		System.out.print("Digite o nome do filme: ");
+		Fmt.print("Digite o nome do filme: ");
 		filme.setNome(scan.nextLine());
 
-		System.out.print("Digite o ano do lançamento: ");
+		Fmt.print("Digite o ano do lançamento: ");
 		filme.setAno(scan.nextLine());
 
-		System.out.print("Digite o nome do diretor: ");
+		Fmt.print("Digite o nome do diretor: ");
 		filme.setDiretor(scan.nextLine());
 
 		String movieFormat =
 				"\nDados Informados:"
 				+"\nNome: " + Fmt.emCouch(filme.getNome())
 				+"\nAno: " + Fmt.emCouch(filme.getAno())
-				+"\nDiretor " + Fmt.emCouch(filme.getDiretor())
+				+"\nDiretor: " + Fmt.emCouch(filme.getDiretor())
 				+"\nPressione qualquer tecla para confirmar ou 0 para cancelar";
 
-		System.out.println(movieFormat);
+		Fmt.println(movieFormat);
 		if (scan.nextLine().equals("0")){
 			displayCancelMessage();
 			return;
 		}
 
 		MovieStorage.insertMovie(filme);
-		System.out.println(SUCCESS_MESSAGE);
+		Fmt.println(SUCCESS_MESSAGE);
 	}
 
 	private void displayCancelMessage(){
-		System.out.println(CANCEL_MESSAGE);
+		Fmt.println(CANCEL_MESSAGE);
 	}
 
 }
