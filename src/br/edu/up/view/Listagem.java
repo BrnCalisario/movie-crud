@@ -59,7 +59,7 @@ public class Listagem extends Tela {
 
 	private static Filme selectByID() {
 		while(true) {
-			Fmt.println("Digite o ID do filme desejado (digite 0 para voltar): ");
+			Fmt.println("\nDigite o ID do filme desejado (digite 0 para voltar): ");
 			try {
 
 				int id = scan.nextInt();

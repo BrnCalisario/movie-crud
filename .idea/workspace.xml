@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="Cancel option for Register Screen">
-      <change afterPath="$PROJECT_DIR$/src/br/edu/up/view/Editor.java" afterDir="false" />
+    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="Editor class and Delete Option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banco-sqlite.db" beforeDir="false" afterPath="$PROJECT_DIR$/banco-sqlite.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/up/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/up/MovieStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/MovieStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/up/util/Fmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/util/Fmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Cadastro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Editor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +27,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,7 +66,7 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principal">
     <configuration name="Principal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="br.edu.up.Main" />
       <module name="movie-crud" />
@@ -75,6 +74,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Teste" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="br.edu.up.teste" />
+      <module name="movie-crud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Teste" />
+      <item itemvalue="Application.Principal" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +100,10 @@
       <workItem from="1654133784778" duration="4821000" />
       <workItem from="1654176010105" duration="7097000" />
       <workItem from="1654189643705" duration="351000" />
-      <workItem from="1654277470954" duration="204000" />
+      <workItem from="1654277470954" duration="5391000" />
+      <workItem from="1654294401084" duration="907000" />
+      <workItem from="1654295410978" duration="323000" />
+      <workItem from="1654635297275" duration="5785000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1654134857650</created>
@@ -106,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654178658036</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Editor class and Delete Option">
+      <created>1654277743305</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654277743305</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="Cancel option for Register Screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cancel option for Register Screen" />
+    <MESSAGE value="Editor class and Delete Option" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editor class and Delete Option" />
   </component>
 </project>

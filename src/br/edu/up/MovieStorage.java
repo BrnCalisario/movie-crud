@@ -35,5 +35,11 @@ public class MovieStorage {
 		em.getTransaction().commit();
 	}
 
+	public static void updateMovie(Filme filme) {
+		em.getTransaction().begin();
+		em.merge(filme);
+		em.getTransaction().commit();
+	}
+
 
 }

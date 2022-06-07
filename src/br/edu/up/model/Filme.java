@@ -24,14 +24,6 @@ public class Filme implements Serializable {
 
 	}
 
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
 	public String getNome() {
 
 		if(nome.isEmpty()){
@@ -60,6 +52,15 @@ public class Filme implements Serializable {
 	public void setDiretor(String diretor) {
 		this.diretor = diretor;
 	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 
 	@Override
 	public String toString() {

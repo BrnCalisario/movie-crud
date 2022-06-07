@@ -1,5 +1,11 @@
 package br.edu.up.util;
 
+import br.edu.up.model.Filme;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Fmt {
 
 	public static String pularLinhas(int qntLinhas) {
@@ -62,5 +68,19 @@ public class Fmt {
 	public static void println(String str){
 		System.out.println(str);
 	}
+
+
+	public static List<String> getFields(Object o) {
+
+		List<String> listaCampos = new ArrayList();
+		Class<?> classeFilme = o.getClass();
+
+		for(Field field : classeFilme.getDeclaredFields()) {
+			listaCampos.add(field.getName());
+		}
+
+		return listaCampos;
+	}
+
 
 }
