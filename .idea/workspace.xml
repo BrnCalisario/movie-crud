@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="Editor class and Delete Option">
+    <list default="true" id="2a63cced-5ddf-41c6-8f67-46f98d960c94" name="Changes" comment="implemented Update Option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banco-sqlite.db" beforeDir="false" afterPath="$PROJECT_DIR$/banco-sqlite.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/up/MovieStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/MovieStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/model/Filme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/up/util/Fmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/util/Fmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/view/Listagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/edu/up/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/edu/up/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,8 +77,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Teste" />
       <item itemvalue="Application.Principal" />
+      <item itemvalue="Application.Teste" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,7 +98,14 @@
       <workItem from="1654277470954" duration="5391000" />
       <workItem from="1654294401084" duration="907000" />
       <workItem from="1654295410978" duration="323000" />
-      <workItem from="1654635297275" duration="5785000" />
+      <workItem from="1654635297275" duration="6029000" />
+      <workItem from="1654712116160" duration="23000" />
+      <workItem from="1654712233292" duration="40000" />
+      <workItem from="1655435187417" duration="218000" />
+      <workItem from="1655511462212" duration="501000" />
+      <workItem from="1655832055594" duration="90000" />
+      <workItem from="1655832438194" duration="231000" />
+      <workItem from="1655840529606" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1654134857650</created>
@@ -126,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654277743305</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented Update Option">
+      <created>1654641629789</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654641629789</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +156,7 @@
     <MESSAGE value="start" />
     <MESSAGE value="Cancel option for Register Screen" />
     <MESSAGE value="Editor class and Delete Option" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editor class and Delete Option" />
+    <MESSAGE value="implemented Update Option" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Update Option" />
   </component>
 </project>

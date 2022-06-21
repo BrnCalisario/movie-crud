@@ -13,7 +13,7 @@ public class Main {
 	static String opcao;
 	static Scanner scan = new Scanner(System.in);
 
-	static final String FINAL_MESSAGE = "\n\nObrigado por utilizar o Letterboxd(Java Edition).";
+	static final String FINAL_MESSAGE = "\n\nObrigado por utilizar o Programa.";
 	static ArrayList<Tela> listaTelas = new ArrayList<>();
 
 	public static void main(String[] args) {
