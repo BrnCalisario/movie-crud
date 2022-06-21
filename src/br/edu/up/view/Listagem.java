@@ -33,8 +33,12 @@ public class Listagem extends Tela {
 
 			if(Fmt.isValid(opcao, 1)){
 
-				Editor editor = new Editor(selectByID());
-				editor.displayScreen();
+				Filme filme = selectByID();
+				
+				if (filme != null) {
+					Editor editor = new Editor(filme);
+					editor.displayScreen();
+				}	
 
 
 			} else if (opcao.equals("0")){
@@ -79,7 +83,7 @@ public class Listagem extends Tela {
 				return filme;
 			}
 		}
-		throw new Exception("ID Inv·lido");
+		throw new Exception("ID Inv√°lido");
 	}
 
 }
